@@ -69,14 +69,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 1. Copy the **entire** `mac/` folder to the device.
 2. Double‑click `Onboarding.command`.
 
-If macOS blocks it with a verification warning, use one of these options:
-- **Finder:** right‑click `Onboarding.command` → **Open** → **Open**.
-- **Terminal (clears quarantine flag):**
-  ```bash
-  xattr -dr com.apple.quarantine ./Onboarding.command
-  ```
-
-You can also run it directly in Terminal:
+If macOS blocks it, right‑click → **Open** and confirm. You can also run it in Terminal:
 ```bash
 chmod +x ./onboarding.sh ./Onboarding.command
 ./Onboarding.command
